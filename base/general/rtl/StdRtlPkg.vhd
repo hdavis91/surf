@@ -32,7 +32,7 @@ package StdRtlPkg is
    subtype slv is std_logic_vector;
 
    -- Declare arrays of built in types
-   --type SlvArray     is array (natural range <>) of slv;   -- not supported in VCS yet (14APRIL2014 -- LLR)
+   type SlvArray     is array (natural range <>) of slv;   -- Supported in Vivado 2022.1
    type IntegerArray  is array (natural range <>) of integer;
    type NaturalArray  is array (natural range <>) of natural;
    type PositiveArray is array (natural range <>) of positive;
@@ -41,7 +41,7 @@ package StdRtlPkg is
    type BooleanArray  is array (natural range <>) of boolean;
 
    -- Declare vector arrays of built in types
-   --type SlvVectorArray     is array (natural range<>, natural range<>) of slv;   -- not supported in VCS yet (14APRIL2014 -- LLR)
+   type SlvVectorArray     is array (natural range<>, natural range<>) of slv;   -- Supported in Vivado 2022.1
    type IntegerVectorArray  is array (natural range<>, natural range<>) of integer;
    type NaturalVectorArray  is array (natural range<>, natural range<>) of natural;
    type PositiveVectorArray is array (natural range<>, natural range<>) of positive;
